@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Resume</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="ressume.css">
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <canvas id="canvas1"> </canvas>
+    <script src="resume.js"></script>
+    <!-- Navigation -->
+    <nav>
+        <ul id="nav">
+            <li class="navigation"><a class="active" href="#welcome">Welcome</a></li>
+            <li class="navigation"><a href="#about">About me</a></li>
+            <li class="navigation"><a href="#education">Education</a></li>
+            <li class="navigation"><a href="#lang">Languages</a></li>
+            <li class="navigation"><a href="#skills">Technical Skills</a></li>
+        </ul>
+    </nav>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="12.mp4" type="video/mp4">
+    </video>
+
+    <script>
+        var video = document.getElementById("myVideo");
+        var btn = document.getElementById("myBtn");
+
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+            } else {
+                video.pause();
+                btn.innerHTML = "Play";
+            }
+        }
+    </script>
+
+    <div class="resume">
+        <h4>Visit my resume down below!</h4>
+    </div>
+
+
+    <!-- About me -->
+    <div class="intro section" id="about">
+        <div class="container">
+            <p id="hi">Hi, my name is Alexandra</p>
+            <div class="units-row units-split wrap">
+                <div class="unit-20">
+                    <img src="simba.jpg" alt="Avatar">
+                </div>
+                <div class="unit-80">
+                    <h1>About me<br><span id="typed"></span></h1>
+                </div>
+                <p>
+                    I live in a small town near to Oradea, Romania. I'm 22 and I'm a student at the University of
+                    Oradea and curently I'm in my second year in Information Technology. I also studied Geography and
+                    Tourism, I liked it when I started, but soon I realized that I want something else for my future, so
+                    I started studying computer science. I love it so far, I had a passion for computer science and
+                    technology when I was younger.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Education -->
+    <div class="education section second" id="education">
+        <div class="container">
+            <h1>Education</h1>
+            <ul class="education-list">
+                <li>2022</li>
+                <li><a href="#">The Web Developer Bootcamp 2022, by Colt Steele</a></li>
+                <li>Udemy</li>
+            </ul>
+            <ul class="education-list">
+                <li>2020-2022</li>
+                <li><a href="#">Information Technology</a></li>
+                <li>University of Oradea</li>
+            </ul>
+            <ul class="education-list">
+                <li>2018-2021</li>
+                <li><a href="#">Geography of Tourism</a></li>
+                <li>University of Oradea</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Languages -->
+    <div class="lang section second" id="lang">
+        <div class="container">
+            <h1>Spoken Languages</h1>
+            <ul class="lang-list list-flat">
+                <li>Romanian</li>
+                <li>Native Speaker</li>
+
+
+            </ul>
+            <ul class="lang-list list-flat">
+                <li>Hungarian</li>
+                <li>Speaking &sim; C2</li>
+                <li>Writing &sim; C2</li>
+                <li>Reading &sim; C2</li>
+            </ul>
+            <ul class="lang-list list-flat">
+                <li>English</li>
+                <li>Speaking &sim; C2</li>
+                <li>Writing &sim; C1</li>
+                <li>Reading &sim; C2</li>
+            </ul>
+            <ul class="lang-list list-flat">
+                <li>German</li>
+                <li>Speaking &sim; C1</li>
+                <li>Writing &sim; B1</li>
+                <li>Reading &sim; B1</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Technical Skills -->
+    <div class="skills section second" id="skills">
+        <div class="container">
+            <h1>Technical<br>Skills</h1>
+            <ul class="skill-list list-flat">
+                <li>Web Technology</li>
+                <li>HTML / CSS / SASS / Javascript</li>
+            </ul>
+            <ul class="skill-list list-flat">
+                <li>Database</li>
+                <li>MySQL / MongoDB / Oracle </li>
+            </ul>
+            <ul class="skill-list list-flat">
+                <li>Framework</li>
+                <li>Figma</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Quote -->
+    <div class="git">
+        <div class="container text-centered">
+            <h1>My GitHub account is <a href="">here</a>.</h1>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
